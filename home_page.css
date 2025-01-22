@@ -1,0 +1,27 @@
+.logo{
+    background: #fff;
+}
+.dropdown-toggle::before{
+    content: "";
+}
+.dropdown-toggle::hover{
+    &.dropdown-menu{
+        display: block;
+    }
+}
+/* ∧ */
+.login_button{
+    width: 10rem;
+}
+
+@media screen and (max-width: 992px) {
+    .search_parent{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .search_parent{
+        width: 50%;
+    }
+}

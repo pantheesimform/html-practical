@@ -1,30 +1,50 @@
+a {
+    text-decoration: none;
+    i{
+        color: revert;
+    }
+}
+
 .logo {
     background: #fff;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .dropdown-toggle::before {
     content: "";
 }
-.dropdown{
-    .fa-angle-up{
+
+.dropdown {
+    .fa-angle-up {
         display: none;
     }
 }
+
 .dropdown:hover {
     .dropdown-menu {
         display: block;
     }
-    .fa-angle-down{
+
+    .fa-angle-down {
         display: none;
     }
-    .fa-angle-up{
+
+    .fa-angle-up {
         display: inline-block;
     }
 }
 
-/* ∧ */
 .login_button {
     width: 10rem;
+}
+
+.search_icon {
+    background: url("assets/search.png") no-repeat 98%;
+    background-size: 1rem;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 992px) {
@@ -37,4 +57,13 @@
     .search_parent {
         width: 50%;
     }
+}
+
+.subnav_img {
+    height: 7rem;
+}
+
+.subnav_title {
+    text-transform: capitalize;
+    color: black;
 }

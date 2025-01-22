@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-
+< lang="en">
+<!-- FIXME: some icon is coming after we type something in searchbar -->
+<!-- FIXME: change icon color to text color for every anchor element -->
+<!-- FIXME: dropdown is taking up space and making scroll content -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,8 +37,8 @@
                     id="navbarTogglerDemo02">
                     <!-- searchbar with some suggestions -->
                     <div class="d-lg-flex search_parent">
-                        <input list="categories" name="search" id="search"
-                            class="align-self-start px-2 my-2 my-lg-0 w-100"
+                        <input type="search" list="categories" name="search" id="search"
+                            class="align-self-start px-2 my-2 my-lg-0 w-100 search_icon"
                             placeholder="Search for products, brands and more">
                         <datalist id="categories">
                             <option value="Edge">
@@ -56,15 +58,15 @@
                         </li>
                         <!-- your cart -->
                         <li class="nav-item">
-                            <div href="#" class="">
+                            <a href="#" class="text-decoration-none text-white">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                 <span>Cart</span>
-                            </div>
+                            </a>
                         </li>
                         <!-- dropdown for more options -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-bs-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-bs-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 More
                                 <i class="fa-solid fa-angle-down"></i>
                                 <i class="fa-solid fa-angle-up"></i>
@@ -85,17 +87,113 @@
     </header>
     <!-- subnav -->
     <div class="container-fluid">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nam molestias? Placeat nam, adipisci maxime
-        ab veniam amet sit quis non corrupti magnam deserunt dicta id, doloremque iste tenetur harum.
+        <div class="subnav w-full d-flex overflow-auto mx-auto justify-content-center gap-4 py-5">
+            <!-- offers -->
+            <div class="">
+                <div class="subnav_img_container">
+                    <img class="subnav_img" src="assets/subnav/offers.jpg" alt="offers">
+                </div>
+                <div class="">
+                    <div class="fw-semibold text-center"><span class="subnav_title">offers</span></div>
+                </div>
+            </div>
+            <!-- grocery -->
+            <div class="">
+                <div class="subnav_img_container">
+                    <img class="subnav_img" src="assets/subnav/grocery.webp" alt="grocery">
+                </div>
+                <div class="">
+                    <div class="fw-semibold text-center"><span class="subnav_title">grocery</span></div>
+                </div>
+            </div>
+            <!-- mobiles -->
+            <div class="">
+                <div class="subnav_img_container">
+                    <img class="subnav_img" src="assets/subnav/mobiles.webp" alt="mobiles">
+                </div>
+                <div class="">
+                    <div class="fw-semibold text-center"><span class="subnav_title">mobiles</span></div>
+                </div>
+            </div>
+            <!-- fashion -->
+            <div class="">
+                <div class="subnav_img_container">
+                    <img class="subnav_img" src="assets/subnav/fashion.jpg" alt="fashion">
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-bs-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="subnav_title fw-semibold">fashion</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </a>
+                    <ul class="dropdown-menu rounded-0">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">n</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- electronics -->
+            <div class="">
+                <div class="subnav_img_container">
+                    <img class="subnav_img" src="assets/subnav/electronics.jpg" alt="electronics">
+                </div>
+                <div class="">
+                    <div class="fw-semibold text-center"><span class="subnav_title">electronics</span></div>
+                </div>
+            </div>
+            <!-- home -->
+            <div class="">
+                <div class="subnav_img_container">
+                    <img class="subnav_img" src="assets/subnav/home.jpg" alt="home">
+                </div>
+                <div class="">
+                    <div class="fw-semibold text-center"><span class="subnav_title">home</span></div>
+                </div>
+            </div>
+            <!-- appliances -->
+            <div class="">
+                <div class="subnav_img_container">
+                    <img class="subnav_img" src="assets/subnav/appliances.webp" alt="appliances">
+                </div>
+                <div class="">
+                    <div class="fw-semibold text-center"><span class="subnav_title">appliances</span></div>
+                </div>
+            </div>
+            <!-- flight -->
+            <div class="">
+                <div class="subnav_img_container">
+                    <img class="subnav_img" src="assets/subnav/flight.webp" alt="flight">
+                </div>
+                <div class="">
+                    <div class="fw-semibold text-center"><span class="subnav_title">flight</span></div>
+                </div>
+            </div>
+            <!-- toys -->
+            <div class="">
+                <div class="subnav_img_container">
+                    <img class="subnav_img" src="assets/subnav/toys.avif" alt="toys">
+                </div>
+                <div class="">
+                    <div class="fw-semibold text-center"><span class="subnav_title">toys</span></div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- other content -->
     <main class="bg-body-tertiary py-3">
-        <!-- carousel 1 -->
+        <!-- carousel 1 and ad container-->
         <div class="container">
             <div class="row my-3">
+                <!-- carousel 1 -->
                 <div class="card border border-0 p-3 col-12 col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. In soluta delectus magni aperiam nihil at voluptatum laudantium excepturi perspiciatis vel,
                     libero inventore obcaecati dolorem, placeat, alias reiciendis magnam quod mollitia.</div>
+                <!-- advertisement -->
                 <div class="card border border-0 p-3 col-12 col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. In soluta delectus magni aperiam nihil at voluptatum laudantium excepturi perspiciatis vel,
                     libero inventore obcaecati dolorem, placeat, alias reiciendis magnam quod mollitia.</div>

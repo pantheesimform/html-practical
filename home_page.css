@@ -14,9 +14,9 @@ a {
     background: #fff;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .dropdown-toggle::before {
     content: "";
@@ -31,7 +31,8 @@ a {
     transition: transform var(--transition_time);
 }
 
-.dropdown:hover {
+
+.navbar .dropdown:hover {
     .dropdown-menu {
         display: block;
     }
@@ -70,7 +71,8 @@ a {
 
 input[type="search"]:active {
     background: none;
-    .search_icon{
+
+    .search_icon {
         background: none;
         display: none;
     }
@@ -124,6 +126,7 @@ input[type="search"]:active {
     max-height: 100%;
     object-fit: contain;
 }
+
 .card_carousel1 img:hover {
     object-fit: contain;
     transform: scale(1.05);
